@@ -61,6 +61,7 @@ http://localhost:8501
 ├── chatbot_env/        # Virtual environment (optional)
 ├── README.md           # Project documentation
 ├── requirements.txt    # Python dependencies
+├── streamlit_app.py    # streamlit app to be uploaded on streamlit cloud
 ```
 ---
 
