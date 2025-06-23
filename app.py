@@ -4,8 +4,8 @@ import os
 import json
 from dotenv import load_dotenv
 
-load_dotenv()
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+
+OPENROUTER_API_KEY = "your-api-key-here"
 
 if not OPENROUTER_API_KEY:
     st.error("❌ API Key not found. Please set OPENROUTER_API_KEY in your .env file.")
@@ -113,7 +113,9 @@ if user_input:
                 bot_reply = response.json()["choices"][0]["message"]["content"]
 
             elif response.status_code == 401:
-                bot_reply = "🔐 Access denied. Please check your API key and try again."
+                logging = response.json()
+                json_string = json.dumps(logging)
+                bot_reply = "🔐 Access denied. Please check your API key and try again." + json_string
 
             elif response.status_code == 429:
                 bot_reply = "🚦 Too many requests. Please wait a moment and try again."
