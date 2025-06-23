@@ -89,3 +89,26 @@ All API usage must comply with OpenRouter and model provider terms of service.
 - OpenAI GPT models
 
 ---
+
+## 📸 Preview
+
+Here's a step-by-step walkthrough of how FinBuddy chatbot works:
+
+### Step 1: Start the chat
+User opens the app and sees the welcome screen with a message input field.  
+🖼️ `1_start_chat.png`
+![Start Chat](preview/1_start_chat.png)
+
+---
+
+### Step 2: User asks a question and gets a response
+The user types a financial question, and FinBuddy gives a helpful AI-powered response.  
+🖼️ `2_sample_question_and_response.png`
+![Sample Question](preview/2_sample_question_and_response.png)
+
+---
+
+### Step 3: Follow-up response
+The conversation continues smoothly with a follow-up question and another accurate response from FinBuddy.  
+🖼️ `3_sample_follow_up_response.png`
+![Follow-up Response](preview/3_sample_follow_up_response.png)
